@@ -4,14 +4,13 @@ def badge_maker (name)
   puts "Hello, my name is #{name}."
 end
 
-def batch_badge_creator (array)
-  new_array = []
-  array.each do |speaker|
-    new_array << badge_maker(speaker)
+def batch_badge_creator (attendees)
+  attendees.map do |name|
+  badge_maker(name)
   end
 end 
 
-def assign_rooms
+def assign_room (name, number)
   
 end 
 
